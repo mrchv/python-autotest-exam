@@ -12,3 +12,5 @@ def test_guest_can_add_product_to_cart(browser, promo_offer):
     page.solve_quiz_and_get_code()
     time.sleep(2)
     page.book_is_in_basket()
+    # page.should_not_be_success_message()
+    page.should_be_success_message()

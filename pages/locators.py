@@ -16,3 +16,4 @@ class ProductPageLocators():
     ADDED_TO_BASKET = (By.XPATH, "//div[@class='alertinner ']/strong[1]")
     BASKET_AMOUNT = (By.XPATH, "//div[@class='alertinner ']/p/strong")
     BOOK_AMOUNT = (By.CSS_SELECTOR, "div > p.price_color")
+    SUCCESS_MESSAGE = (By.CLASS_NAME, "alert-success")

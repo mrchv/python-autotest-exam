@@ -33,4 +33,11 @@ class ProductPage(BasePage):
         book_amount = self.browser.find_element(*ProductPageLocators.BOOK_AMOUNT).get_attribute('innerHTML')
         assert book_amount in basket_amount, "Different amount"
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_be_success_message(self):
+        assert self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is not presented, but should be"
 
