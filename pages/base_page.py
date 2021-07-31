@@ -56,3 +56,7 @@ class BasePage():
         "There is items in your basket"
         assert "Your basket is empty" in self.browser.find_element(*BasePageLocators.BASKET_EMPTY). \
             get_attribute('innerHTML'), "Basket is not empty"
+
+    def should_be_authorized_user(self):
+        assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \
+                                                                     " probably unauthorised user"

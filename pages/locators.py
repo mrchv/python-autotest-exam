@@ -6,11 +6,16 @@ class BasePageLocators():
     BASKET_LINK = (By.CSS_SELECTOR, ".btn-group > a")
     BASKET_EMPTY = (By.CSS_SELECTOR, "div [id='content_inner'] > p")
     BASKET_ELEMENT = (By.CSS_SELECTOR, "basket-items")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 
 class LoginPageLocators():
     LOGIN_FORM = (By.ID, "login_form")
     REGISTER_FORM = (By.ID, "register_form")
+    EMAIL_FORM = (By.CSS_SELECTOR, "[name=registration-email]")
+    PASSWORD_FORM1 = (By.CSS_SELECTOR, "[name=registration-password1]")
+    PASSWORD_FORM2 = (By.CSS_SELECTOR, "[name=registration-password2]")
+    REGISTRATION_BUTTON = (By.NAME, "registration_submit")
 
 
 class ProductPageLocators():
