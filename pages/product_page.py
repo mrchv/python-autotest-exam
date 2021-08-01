@@ -3,6 +3,7 @@ from .locators import ProductPageLocators
 import math
 from selenium.common.exceptions import NoAlertPresentException
 
+
 class ProductPage(BasePage):
     def add_to_cart(self):
         link = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET)
